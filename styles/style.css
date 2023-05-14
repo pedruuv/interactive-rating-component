@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+.attribution{
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --light-dark-blue: hsl(218, 27%, 30%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --font-family: 'Overpass', sans-serif;
+}
+
+body{
+    background-color: var(--very-dark-blue);
+    color: var(--white);
+    font-family: var(--font-family);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+button{
+    font-family: inherit;
+}
+
+.main-container, .thank-you{
+    background-color: var(--dark-blue);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin: 1.5rem;
+}
+
+.main-container h1{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem 0 1rem;
+}
+
+.main-container img{
+    background-color: var(--light-dark-blue);
+    padding: 0.9rem;
+    border-radius: 50%;
+}
+
+p{
+    color: var(--medium-grey);
+    line-height: 1.2;
+}
+
+.main-container p{
+    margin-bottom: 1rem;
+    max-width: 25rem;
+}
+
+.main-container ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--light-dark-blue);
+    color: var(--light-grey);
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.btn:focus{
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+
+.btn-submit{
+    border: none;
+    background-color: var(--orange);
+    color: var(--white);
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.btn-submit:hover{
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.main-container{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.thank-you{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.thank-you img{
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+.thank-you-p{
+    background-color: var(--light-dark-blue);
+    color: var(--orange);
+    padding: 0.2rem 0.5rem 0;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom:  2rem;
+    font-size: 1rem;
+}
+
+.thank-you h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.thank-you p{
+    margin-bottom: 1rem;
+    max-width: 25rem;
+}
+
